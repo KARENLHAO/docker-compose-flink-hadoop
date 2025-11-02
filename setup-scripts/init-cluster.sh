@@ -38,7 +38,19 @@ if [ "${CURRENT_NODE}" = "master" ]; then
     echo "等待 worker 节点 SSH 服务启动..."
     sleep 5
     
+    # 同步 Hadoop 配置
+    echo "同步 Hadoop 配置到 worker1..."
+    scp -o StrictHostKeyChecking=no -r ${HADOOP_HOME}/etc/hadoop/* worker1:${HADOOP_HOME}/etc/hadoop/
     
+    echo "同步 Hadoop 配置到 worker2..."
+    scp -o StrictHostKeyChecking=no -r ${HADOOP_HOME}/etc/hadoop/* worker2:${HADOOP_HOME}/etc/hadoop/
+    
+    # 同步 Flink 配置
+    echo "同步 Flink 配置到 worker1..."
+    scp -o StrictHostKeyChecking=no -r ${FLINK_HOME}/conf/* worker1:${FLINK_HOME}/conf/
+    
+    echo "同步 Flink 配置到 worker2..."
+    scp -o StrictHostKeyChecking=no -r ${FLINK_HOME}/conf/* worker2:${FLINK_HOME}/conf/
     
     # 下载并安装 Flink Hadoop 依赖
     echo ""
