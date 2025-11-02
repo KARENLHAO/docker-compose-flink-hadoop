@@ -1,0 +1,15 @@
+/workspace/java/src/main/java/myjob/BatchWordCount.java
+/workspace/java/src/main/java/myjob/CardCommon.java
+/workspace/java/src/main/java/myjob/CardFraudDetectionValueState.java
+/workspace/java/src/main/java/myjob/SocketTriggerWindowSum.java
+/workspace/java/src/main/java/myjob/CardTotalAmountReducingState.java
+/workspace/java/src/main/java/myjob/VehicleCategoryCountProcessWindow.java
+/workspace/java/src/main/java/myjob/CardTop3TransactionsListState.java
+/workspace/java/src/main/java/myjob/CardAmountCountMapState.java
+/workspace/java/src/main/java/myjob/CardAverageAmountAggregatingState.java
+/workspace/java/src/main/java/myjob/WatermarkLateDataHandling.java
+/workspace/java/src/main/java/myjob/SensorMaxTemperatureReduce.java
+/workspace/java/src/main/java/myjob/StreamWordCount.java
+/workspace/java/src/main/java/myjob/TextProcessingAFilter.java
+/workspace/java/src/main/java/myjob/OrderSalesAggregate.java
+/workspace/java/src/main/java/myjob/WaterSensorMaxLevelAggAndProcess.java
